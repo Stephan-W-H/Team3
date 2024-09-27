@@ -1,9 +1,10 @@
 const model = {
     app:{
-        activeUser: '',
-        page: '',
+        app: document.getElementById('app'),
+        activeUser: null,
+        page: ['mainpage','userpage',]
     },
-
+        
 
     input:{
         registration: {
@@ -28,6 +29,8 @@ const model = {
         },
 
         searchBar: null,
+
+        
 
 
        // addNewMovie: {
@@ -63,6 +66,7 @@ const model = {
             myFavorites: [],
             favoriteGenre: [],
             favoriteActors: [],
+            recomendedForMe: []
             },
             
             {
@@ -77,6 +81,7 @@ const model = {
                 myFavorites: [],
                 favoriteGenre: [],
                 favoriteActors: [],
+                recomendedForMe: []
             } 
         ],
 
@@ -104,6 +109,7 @@ const model = {
             }
         ],
 
+        //dette gjelder skjermbildet 1 som er før innlogging.
         recomendedMovies: [],
         topRatedMovies: [],
         newMovies: [],
